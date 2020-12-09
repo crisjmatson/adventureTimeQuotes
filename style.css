@@ -1,0 +1,91 @@
+html {
+	background-color: lightblue;
+	background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f730b7a-3cfe-45f3-bd4f-a3553538a548/d4a6hvp-867c00e0-9d76-4ef7-bd5d-2727a5d2559f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOGY3MzBiN2EtM2NmZS00NWYzLWJkNGYtYTM1NTM1MzhhNTQ4XC9kNGE2aHZwLTg2N2MwMGUwLTlkNzYtNGVmNy1iZDVkLTI3MjdhNWQyNTU5Zi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.ExP2XF18PhpsKnRZ5mxE6xBw6ZRznndzuYL06KwLLGc")
+		no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+div {
+	text-align: center;
+}
+main {
+	margin-top: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+	padding: 5vh;
+}
+.cloudReveal {
+	z-index: 4;
+	position: fixed;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+.cloud {
+	margin-top: -15vh;
+}
+.cloudReveal:hover .cloudyL,
+.cloudReveal:focus .cloudyL,
+.cloudReveal:active .cloudyL {
+	z-index: 1;
+	text-align: left;
+	-webkit-transform: translate(-100vw);
+	transform: translate(-100vw);
+}
+.cloudReveal:hover .cloudyR,
+.cloudReveal:focus .cloudyR,
+.cloudReveal:active .cloudyR {
+	z-index: 1;
+	text-align: left;
+	-webkit-transform: translateX(100vw);
+	transform: translateX(100vw);
+}
+.cloudReveal {
+	text-align: left;
+}
+.cloudyL {
+	padding-right: 30vw;
+	position: absolute;
+	margin-left: -30vw;
+	height: 90vh;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.cloudyR {
+	padding-left: 25vw;
+	position: absolute;
+	height: 90vh;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.bounce {
+	height: 50vh;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+.bounce:hover,
+.bounce:focus,
+.bounce:active {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+	transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
