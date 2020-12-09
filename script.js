@@ -19,7 +19,6 @@ const imgFetch = async () => {
 			"%20"
 		)}&tbm=isch`
 	);
-	console.log(imgResponse);
 	if (imgResponse.ok === true) {
 		let imgJson = await imgResponse.json();
 		imgLink = await imgJson.image_results[0].sourceUrl;
